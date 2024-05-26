@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "575491709680",
+    "firebase_url": "https://degis-tbeta-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "degis-tbeta",
+    "storage_bucket": "degis-tbeta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575491709680:android:c8e5a9487fdeac47e44035",
+        "android_client_info": {
+          "package_name": "com.example.detapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5E8U5F-vgtk3o8SXfjHNaE6g-6oBO92U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

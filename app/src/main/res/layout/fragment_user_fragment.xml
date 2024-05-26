@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.user_fragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.90"
+        />
+
+    <LinearLayout
+        android:id="@+id/hesap_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/geridon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/hesap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/yukleniyor"
+            tools:ignore="MissingConstraints"
+            android:textColor="#0F2C59"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/yukleniyor"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"
+            android:textColor="#0F2C59"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:id="@+id/soyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/yukleniyor"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"
+            android:textColor="#0F2C59"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+
+            />
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/yukleniyor"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"
+            android:textColor="#0F2C59"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:fadingEdgeLength="0dp"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cikis"
+        app:layout_constraintTop_toBottomOf="@id/hesap_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/geridon"
+        android:text="@string/giris_ekranina_don"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"
+        android:backgroundTint="#0F2C59"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/cikis"
+        android:text="@string/cikis_yap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/bottom"
+        android:visibility="gone"
+        android:backgroundTint="#0F2C59"
+        android:layout_margin="20dp"
+       />
+    <ImageButton
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_notifications_none_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        android:backgroundTint="#0F2C59"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/bildirim" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

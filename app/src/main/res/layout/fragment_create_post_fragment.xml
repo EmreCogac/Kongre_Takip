@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.Create_post_fragment"
+    android:gravity="center|top"
+    >
+
+
+    <TextView
+        android:id="@+id/hesap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesap bulunamadı profile gidin ve kayıt olun"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#0F2C59"
+        android:textStyle="bold"
+        android:visibility="visible"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/createPostFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+>
+
+        <EditText
+            android:id="@+id/kongreAdEditText"
+            android:gravity="start"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints"
+            android:visibility="visible"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/backround"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Kongre Adı Giriniz"
+            />
+
+
+        <EditText
+            android:id="@+id/kongreBolumlerEditText"
+            android:gravity="start"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints"
+            android:visibility="visible"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/backround"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:hint="Bölümleri boşluklu Giriniz"
+            />
+
+
+        <EditText
+            android:id="@+id/tamTarihAraligi"
+            android:gravity="start"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints"
+            android:visibility="visible"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/backround"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:hint="Tam Tarih Aralığı Giriniz"
+            />
+        <EditText
+            android:id="@+id/konum"
+            android:gravity="start"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints"
+            android:visibility="visible"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/backround"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:hint="Konum giriniz"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:width="150dp"
+                android:id="@+id/tamTarih"
+                android:text="Kongre Tarihi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:backgroundTint="#0F2C59"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:id="@+id/tamTarihText"
+                android:text="Kongre Tarihi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:textColor="#0F2C59"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:width="120dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:width="150dp"
+                android:id="@+id/bildiriSon"
+                android:text="Bildiri Son Tarihi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:backgroundTint="#0F2C59"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:id="@+id/bildiriSonText"
+                android:text="Bildiri Son Tarihi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:textColor="#0F2C59"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:width="120dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:width="150dp"
+                android:id="@+id/kayitSon"
+                android:text="Kayıt ve Ödeme Son Tarihi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:backgroundTint="#0F2C59"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:id="@+id/kayitSonText"
+                android:text="Kayıt ve Ödeme Son Tarihi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:textColor="#0F2C59"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:width="120dp"
+                />
+
+        </LinearLayout>
+
+        <!--        <TextView-->
+<!--            android:id="@+id/kongreAdiText"-->
+<!--            android:text="Kongre Adi adı"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/guide40percenthorizon"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:textColor="#0F2C59"-->
+<!--            android:textStyle="bold"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_margin="20dp"-->
+<!--            />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/kongreAdEditText"-->
+<!--            android:gravity="start"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/kongreAdiText"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:visibility="visible"-->
+<!--            android:paddingStart="20dp"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:background="@drawable/backround"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:hint="Kongre Adı Giriniz"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/postKongreButton"
+            android:text="Kongre oluştur"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:backgroundTint="#0F2C59"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+    <!--    <Button-->
+<!--        android:id="@+id/postdeneme"-->
+<!--        android:text="Kitap deneme"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/postKongreButton"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:visibility="gone"-->
+<!--        />-->
+
+
+</RelativeLayout>

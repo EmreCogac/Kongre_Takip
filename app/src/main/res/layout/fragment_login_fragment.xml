@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.login_fragment"
+    android:background="#F8F0E5"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide25percenthorizon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide40percenthorizon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide60percenthorizon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide90percenthorizon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:text="GİRİŞ YAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guide25percenthorizon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:textSize="30dp"
+        android:textColor="#0F2C59"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <EditText
+        android:id="@+id/mailEditText"
+        android:gravity="start"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/guide25percenthorizon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:hint="Email"
+        android:background="@drawable/backround"
+        android:inputType="textEmailAddress"
+        />
+<!--    <TextView-->
+<!--        android:id="@+id/sifre"-->
+<!--        android:text="şifre"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/guide40percenthorizon"-->
+<!--        app:layout_constraintStart_toStartOf="@id/mailEditText"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        />-->
+
+    <EditText
+        android:id="@+id/passsEditText"
+        android:gravity="start"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/guide40percenthorizon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/backround"
+        android:hint="Password"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/girisyap"
+        android:text="Giriş Yap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide60percenthorizon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#0F2C59"
+        />
+    <Button
+        android:id="@+id/kaydol"
+        android:text="Kayıt Ol"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/girisyap"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#0F2C59"
+        />
+
+    <Button
+        android:id="@+id/girisyapmadan"
+        android:text="Giriş yapmadan"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/guide90percenthorizon"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#0F2C59"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
